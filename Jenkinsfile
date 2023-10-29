@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build ') {
       steps {
-        sh 'docker --version'
+        sh 'go version'
       }
     }
 
