@@ -9,8 +9,7 @@ pipeline {
 
     stage('Build ') {
       steps {
-        sh '''cd ../broker-service && env GOOS=linux CGO_ENABLED=0 go build -o brokerApp ./cmd/api
-docker-compose up --build -d'''
+        sh 'docker -v'
       }
     }
 
